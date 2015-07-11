@@ -9,6 +9,7 @@ module.exports = function (host, port) {
    });
    
    socket.on('data', function(data) {
+      console.log("mocahd says", data);
    });
 
    socket.on('end', function() {
@@ -25,6 +26,16 @@ module.exports = function (host, port) {
          console.log("rf " + housecode + unit + " off");
          socket.write("rf " + housecode + unit + " off\n");
          socket.write("rf " + housecode + unit + " off\n");
+      },
+      dim: function (housecode, unit) {
+         console.log("rf " + housecode + unit + " dim\n");
+         socket.write("rf " + housecode + unit + " dim\n");
+         socket.write("rf " + housecode + unit + " dim\n");
+      },
+      bright: function (housecode, unit) {
+         console.log("rf " + housecode + unit + " bright\n");
+         socket.write("rf " + housecode + unit + " bright\n");
+         socket.write("rf " + housecode + unit + " bright\n");
       }
    }
 }
