@@ -12,6 +12,7 @@ app.set('view engine', 'html');
 app.set('layout', 'layouts/layout');
 app.set('partials', {header: "partials/header"});
 app.engine("html", require('hogan-express'));
+app.use(express.static('public'));
 
 app.use('/', home);
 app.use('/modules', modules);
