@@ -1,0 +1,15 @@
+{
+  "name": "homeboy",
+  "version": "0.0.0",
+  "description": "A home automation hub.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scott Vanderlind <scottv@ifixit.com>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.13.1",
+    "hogan-express": "~0.5.2"
+  }
+}
