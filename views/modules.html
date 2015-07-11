@@ -1,15 +1,13 @@
 <h3>Actions:</h3>
 <ul>
-   <li>a1: 
-      <button onClick="api.on('a',1)">on</button>
-      <button onClick="api.off('a',1)">off</button>
-      <button onClick="api.dim('a',1)">-</button>
-      <button onClick="api.bright('a',1)">+</button>
+   {{#devices}}
+   <li>{{name}}
+      <button onClick="api.on('{{housecode}}',{{module}})">on</button>
+      <button onClick="api.off('{{housecode}}',{{module}})">off</button>
+      {{#dimmable}}
+      <button onClick="api.dim('{{housecode}}',{{module}})">-</button>
+      <button onClick="api.bright('{{housecode}}',{{module}})">+</button>
+      {{/dimmable}}
    </li>
-   <li>a2: 
-      <button onClick="api.on('a',2)">on</button>
-      <button onClick="api.off('a',2)">off</button>
-      <button onClick="api.dim('a',2)">-</button>
-      <button onClick="api.bright('a',2)">+</button>
-   </li>
+   {{/devices}}
 </ul>

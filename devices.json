@@ -1,0 +1,18 @@
+[
+{
+   "type": "x10",
+   "name": "Scott's Room",
+   "housecode": "a",
+   "module": 2,
+   "dimmable": true,
+   "softstart": false
+},
+{
+   "type": "x10",
+   "name": "Living Room Lamp",
+   "housecode": "a",
+   "module": 1,
+   "dimmable": false,
+   "softstart": false
+}
+]
