@@ -5,6 +5,7 @@ module.exports = function (express, x10) {
    });
    router.post('/:house/:node', function (req, res) {
       x10.on(req.params.house, req.params.node);
+      console.log("on", req.params.house, req.params.node);
       res.send('ok');
    });
    router.patch('/:house/:node', function (req, res) {
@@ -17,6 +18,7 @@ module.exports = function (express, x10) {
    });
    router.delete('/:house/:node', function (req, res) {
       x10.off(req.params.house, req.params.node);
+      console.log("off", req.params.house, req.params.node);
       res.send('ok');
    });
    return router;

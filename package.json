@@ -1,7 +1,7 @@
 {
-  "name": "homeboy",
+  "name": "Homeboy-X10",
   "version": "0.0.0",
-  "description": "A home automation hub.",
+  "description": "A REST-ish API bridging to X10 with a CM19",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
