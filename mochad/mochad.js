@@ -30,11 +30,9 @@ module.exports = function (host, port) {
       dim: function (housecode, unit) {
          console.log("rf " + housecode + unit + " dim\n");
          socket.write("rf " + housecode + unit + " dim\n");
-         socket.write("rf " + housecode + unit + " dim\n");
       },
       bright: function (housecode, unit) {
          console.log("rf " + housecode + unit + " bright\n");
-         socket.write("rf " + housecode + unit + " bright\n");
          socket.write("rf " + housecode + unit + " bright\n");
       }
    }
